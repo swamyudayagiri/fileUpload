@@ -14,7 +14,7 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          url: https://ussltccsl1840.solutions.glbsnet.com:8443/
+          url: https://us.com/
           
         app:
           name: Z802_ATTACHMENT
