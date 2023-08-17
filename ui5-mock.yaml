@@ -18,7 +18,7 @@ server:
           version: 1.78.9 # The UI5 version, for instance, 1.78.1. Empty string means latest version
         backend:
           - path: /sap
-            url: https://ussltccsl1840.solutions.glbsnet.com:8443/
+            url: https://us.com/
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -29,7 +29,7 @@ server:
       beforeMiddleware: fiori-tools-proxy
       configuration:
         service:
-          urlBasePath: /sap/opu/odata/sap/Z802_ATTACHMENTS_SRV
+          urlBasePath: /sap/opu/odata/sap/Z802_AT
           name: ''
           metadataXmlPath: ./webapp/localService/metadata.xml
           mockdataRootPath: ./webapp/localService/data
