@@ -1,0 +1,35 @@
+<mvc:View
+    controllerName="project1.controller.Attachments"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:upload="sap.m.upload"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}" showFooter="true" floatingFooter="true" enableScrolling="true"
+				showNavButton="true" navButtonPress=".onNavButtonPress">
+				<content>
+					<upload:UploadSet id="UploadSet" instantUpload="false" 
+                    showIcons="true" 
+                    terminationEnabled="true"
+                    markers = "" multiple="true"
+						maxFileNameLength="55" beforeUploadStarts="onBeforeUploadStarts"
+                         uploadCompleted="onUploadCompleted" class="sapUiResponsiveMargin">
+                    	
+						
+				
+                        </upload:UploadSet>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Upload" type="Emphasized" press=".startUpload" />
+					</OverflowToolbar>
+				</footer>
+			</Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
