@@ -31,7 +31,7 @@ server:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
           - path: /sap
-            url: https://ussltccsl1840.solutions.glbsnet.com:8443/
+            url: https://us.com/
     - name: sap-fe-mockserver
       beforeMiddleware: fiori-tools-proxy
       configuration:
